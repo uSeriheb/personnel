@@ -1,0 +1,138 @@
+/** Tous les médias **/
+body{
+    background-color: #e3f2fd;
+    margin: 0px;
+    padding: 0px;
+}
+.bg-primary{
+    background-color: #0d47a1 !important;
+}
+.container-fuild .heading{
+   padding-top: 4rem;
+}
+.container-fuild{
+    padding: 0;
+    margin: 0;
+}
+.heading{
+    color: #9933cc;
+    font-size:45px;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-top: 4rem;
+    text-transform: uppercase;
+}
+.container{
+    height: 100vh;
+}
+/*compétences*/
+#compétences .progess{
+    height: 50px;
+    margin-top: 30px;
+    background-color: #e57373;
+}
+#compétences .progress-bar{
+    font-size: 2.1em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+/* experience et formation*/
+#Experience, #Formation{
+   font-style: italic;
+   padding: 0.5em; 
+   color: #0d47a1;
+}
+#Experience p{
+    text-align: center;
+}
+
+.annee{
+  color: green;
+  text-decoration: underline;
+  font-weight: bold;  
+}
+/*Langue parlées et qualitées*/
+#Langue_parlées li, #Qualitées li {
+    color: #0d47a1;
+    list-style: none;
+    padding: 1.2em;
+}
+
+/** Smartphone **/
+@media (max-width: 991.98px){
+   #Moi .laptop, #navbar img{
+       display: none;      
+   }
+   #Moi .heading{
+       visibility: hidden;
+   }
+   img{
+       padding-top:3em;
+   }
+    #Moi .mobile{
+        background-color: #0d47a1;
+        color: white;
+        text-align: center;
+        height: 100vh;
+    }
+    #Moi .mobile img{
+        width:80% ;
+        border: 8px solid;
+    }
+    #Moi .mobile a, #Moi .mobile h3{
+        text-transform: uppercase;
+    }
+    
+}
+
+/** PC et TV **/
+@media (min-width: 992px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        width: 17em;
+        height: 100vh;
+       
+    }
+#navbar .navbar-brand img{
+    border: 8px solid;
+    margin-top: 0.5em;
+}
+
+#navbar .navbar-collapse .navbar-nav{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section{
+    margin-left: 30%;
+   
+}
+#Moi .mobile{
+    display: none;
+ 
+   
+}
+
+ #Moi .laptop{
+     padding: 20%;
+     text-align: center;
+ }   
+ #Moi .laptop .heading{
+  font-size: 4em;
+  color: #cc4733;
+  border-bottom: 1px solid;
+ }
+ #Moi .laptop h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+ }
+ #Moi .laptop h4 {
+    font-size: 30px;
+   }
+
+   #Moi .laptop p {
+    font-size: 30px;
+   }
+}
